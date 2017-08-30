@@ -1,0 +1,17 @@
+#include<math.h>
+#include <iostream>
+using namespace std;
+ 
+int main() 
+{
+    float P,N,R,A,SI,CI;
+    printf ("Enter the value of P,N,R");
+    scanf("%f%f%f",&P,&N,&R);
+    SI=(P*N*R)/100;
+    printf ("Simple Interest is %f",SI);
+    float q={1+(R/100)};
+    A=pow(q,N);
+    CI=(P*A)-P;
+    printf ("Compound Interest is %f",CI);
+    return 0;
+}
