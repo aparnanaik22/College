@@ -1,0 +1,26 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+
+int main() 
+{
+	float a,b,c,x1,x2,discri,t;
+	printf("Enter the values of a,b,c\n",a,b,c);
+	scanf("%f %f %f",&a,&b,&c);
+	discri=(b*b)-(4*a*c);
+	printf("Value of discriminant is %f\n",discri);
+	t=sqrt(discri);
+	printf("Value of t is %f\n",t);
+	if(discri>=0)
+	{
+	     x1=((-b) + t)/(2*a);
+	     x2=((-b) - t)/(2*a);
+	     printf("The roots of the quadratic equation are %f %f\n",x1,x2);
+	}
+	else 
+	{
+	     printf("The roots are imaginary\n");
+	}
+
+	return 0;
+}
